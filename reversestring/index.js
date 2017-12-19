@@ -14,18 +14,27 @@
 // 	return arr.join('');
 // }
 
-// solution 1
+// solution 2	
+// function reverse(str) {
+// 	let reversed = '';
+// 	//
+// 	for (let character of str) {
+// 		// character passed to reversed outside loop
+// 		reversed = character + reversed;
+// 	}
+// 	// return reverse string
+// 	return reversed;
+// }
+
+// solution 3
 function reverse(str) {
-	let reversed = '';
-	//
-	for (let character of str) {
-		// character passed to reversed outside loop
-		reversed = character + reversed;
-	}
-	// return reverse string
-	return reversed;
+
+	return str.split('').reduce((reversed, character) => {
+		return character + reversed;
+	}, '');
 }
 
-reverse('tomm');
+
+// reverse('tomm');
 
 module.exports = reverse;
