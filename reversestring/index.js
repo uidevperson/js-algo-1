@@ -34,7 +34,6 @@ function reverse(str) {
 	}, '');
 }
 
-
 // reverse('tomm');
 
 module.exports = reverse;
